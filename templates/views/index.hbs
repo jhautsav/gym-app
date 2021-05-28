@@ -1,0 +1,235 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+     <script src="js/scroll.js"></script>
+  
+</head>
+
+<body>
+    <!-- this code for navigation section -->
+        {{>alertmessage}}
+    {{>navbar}}
+
+    <!-- this code for end of navigation section -->
+    <!-- this code for home -->
+
+    {{!-- {{#if result}}
+    <div class="alert alert-success" role="alert">
+  This is a success alert—check it out!{{scuess}}
+</div> --}}
+{{!-- {{/if}} --}}
+   {{>home}}
+    <!-- this code for end of home -->
+    <!-- code for program section -->
+    {{>program}}
+
+    <!-- code for end of program section -->
+    <!--  code for template section -->
+    <section id="template">
+        <div class="temp-cont">
+            <h1 class="h2"> DON’T <span class="color">THINK</span>,BEGIN<span class="color">TODAY</span>!</h1>
+            <p> Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue
+                eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+           
+            <button class="btn1">BECOME OF MEMBER</button>
+        </div>
+    </section>
+    <!--  code for end of template section -->
+    <!-- code for classes -->
+     <section id="rootclass">
+         <div class="class1">
+             <h2 class="h2">OUR <span class="color">CLASSES</span></h2>
+             <img src="./img/line1.png" alt="">
+             <p class="p">Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra</p>
+             <p class="p"> ipsum dolor, ultricies fermentum massa consequat eu.</p>
+         </div>
+         <div class="grid">
+             <div class="part1">
+                 <div class="box">
+                     <img src="./img/d2.png" alt="">
+                     <h2 class="color">First Training Class</h2>
+                 </div>
+                 <div class="box">
+                    <img src="./img/d2.png" alt="">
+                    <h2>First Training Class</h2>
+                </div>
+                <div class="box">
+                    <img src="./img/d2.png" alt="">
+                    <h2 >First Training Class</h2>
+                </div>
+                <div class="box">
+                    <img src="./img/d2.png" alt="">
+                    <h2>First Training Class</h2>
+                </div>
+                <button  >View All Schedules</button>
+             </div>
+             <div class="part2">
+                 <img src="./img/sbackground.jpg" alt="">
+                 <h2 class="h2">First Training Class</h2>
+                 <p class="p">Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend</p>
+                 <p class="p">Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia</p>
+                 <p class="p">gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                 <p class="p">Lorem ipsum dolor sit amet.</p>
+                 <button class="btn1">VIEW SCHEDULE</button>
+             </div>
+         </div>
+     </section>
+    <!--  end of code for classes -->
+    <!-- code for scheculdes class -->
+    <section id="sclass">
+        <div class="common">
+        <div class="classs1">
+            <h2 class="h2">ClASSES<span class="color">SCHEDULE</span></h2>
+            <img src="./img/line1.png" alt="">
+            <p class="p">Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra</p>
+            <p class="p"> ipsum dolor, ultricies fermentum massa consequat eu.</p>
+        </div>
+        <div class="heading"><h2> <span class="color">Monday</span> /  Tuesday / Wednesday / Thursday /  Friday</h2></div>
+         <div class="table">
+              <div class="tcont">First Class</div>
+              <div class="tcont">10:00AM-11:30AM</div>
+              <div class="tcont"></div>
+              <div class="tcont">Willam G.Stewart</div>
+              <div class="tcont">First Class</div>
+              <div class="tcont"></div>
+              <div class="tcont"></div>
+              <div class="tcont">Willam G.Stewart</div>
+              <div class="tcont">First Class</div>
+              <div class="tcont"></div>
+              <div class="tcont"></div>
+              <div class="tcont">Willam G.Stewart</div>
+              <div class="tcont">First Class</div>
+              <div class="tcont"></div>
+              <div class="tcont"></div>
+              <div class="tcont">Willam G.Stewart</div>
+              <div class="tcont">First Class</div>
+              <div class="tcont"></div>
+              <div class="tcont"></div>
+              <div class="tcont">Willam G.Stewart</div>
+         </div>
+        </div>
+      
+    </section>
+ <!-- code for end of scheules class -->
+ <!-- code for expaert trainer  -->
+<section id="trainer">
+    <div class="classs1">
+        <h2 class="h2">EXPERT<span class="color">TRAINERS</span></h2>
+        <img src="./img/line1.png" alt="">
+        <p  class="p" style="color: black;" >Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra</p>
+        <p  class="p" style="color: black;" > ipsum dolor, ultricies fermentum massa consequat eu.</p>
+    </div>
+    <div class="trainergrid">
+     <div class="trainercont">
+         <img src="./img/t1.jpg" alt=""  height="200px" width="300px">
+         <p class="color p">Strength Trainer</p>
+         <h2 >Bret D. Bowers</h2>
+        <p>Bitters cliche tattooed 8-bit distillery</p>  
+       <p>  mustache. Keytar succulents gluten-</p>
+       <p>free vegan church-key pour-over seitan flannel.</p>
+       <div class="trainerlogo">
+           {{!-- <img src="./img/icons8-facebook-24.png" alt="" class="timg"> --}}
+           <a href="https://www.facebook.com/utsav.bhartdaws" class="fa fa-facebook"></a>
+           <a href="https://twitter.com/UtsavMaithili" class="fa fa-twitter"></a>
+           <a href="https://www.linkedin.com/in/utsav-kumar-jha-97b72b209/" class="fa fa-linkedin"></a>
+       </div>
+     </div>
+     <div class="trainercont">
+        <img src="./img/t2.jpg" alt=""  height="200px" width="300px">
+        <p class="color p">Strength Trainer</p>
+        <h2 >Bret D. Bowers</h2>
+       <p>Bitters cliche tattooed 8-bit distillery</p>  
+      <p>  mustache. Keytar succulents gluten-</p>
+      <p>free vegan church-key pour-over seitan flannel.</p>
+      <div class="trainerlogo">
+           <a href="https://www.facebook.com/utsav.bhartdaws" class="fa fa-facebook"></a>
+           <a href="https://twitter.com/UtsavMaithili" class="fa fa-twitter"></a>
+           <a href="https://www.linkedin.com/in/utsav-kumar-jha-97b72b209/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+    <div class="trainercont">
+        <img src="./img/t3.jpg" alt=""  height="200px" width="300px">
+        <p class="color p">Strength Trainer</p>
+        <h2 >Bret D. Bowers</h2>
+       <p>Bitters cliche tattooed 8-bit distillery</p>  
+      <p>  mustache. Keytar succulents gluten-</p>
+      <p>free vegan church-key pour-over seitan flannel.</p>
+      <div class="trainerlogo">
+     <a href="https://www.facebook.com/utsav.bhartdaws" class="fa fa-facebook"></a>
+           <a href="https://twitter.com/UtsavMaithili" class="fa fa-twitter"></a>
+           <a href="https://www.linkedin.com/in/utsav-kumar-jha-97b72b209/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+</div>
+
+</section>
+
+ <!-- code for end of expart trainer -->
+ <!-- this code for google map and form -->
+   <section id="information">
+       
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184245!2d77.20653218198595!3d28.628901718705755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1609563737933!5m2!1sen!2sin" 
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+         
+       <div class="formback">
+ <div id="form-col">
+     <form action="/email" method="POST">
+        <div > <input type="text" name="username" id="un" placeholder="Your Name*"  class="size-small" required/> 
+            <input type="email" name="email" id="email" placeholder="Your Email*"  class="size-small" required/> 
+         </div>
+         <div>    <input type="text" name="subject" id="subject" placeholder="Subject" class="size-big" required/> 
+         </div>
+         <div>
+            <textarea name="text" id="ta" rows="10" cols="60" placeholder=" Message"  required  /></textarea> 
+         </div>
+         <div>
+            <input type="submit" value="SEND MESSAGE" class="btn" > 
+         </div>
+     </form>
+
+ </div>
+</div>
+</section> 
+ 
+ <!-- this  code for end of google  map and form -->
+ <!-- this code for footer  section -->
+
+{{>footer}}
+ <!-- this code for end of footer section -->
+<script>
+    window.addEventListener('scroll',function()
+{
+    let header=this.document.querySelector('header');
+    let windowPostion=window.scrollY>0;
+    header.classList.toggle('scrolling-active',windowPostion);
+})
+
+const alert1=document.getElementById('alertbox');
+ {{#if result}}
+ alert1.innerHTML=` 
+  <div class="alert alert-{{value1}} alert-dismissible fade show">
+    <strong>Success!</strong> Your message has been sent successfully {{scuess}}.
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+ 
+  </div>
+ `
+ setTimeout(function()
+ {
+     alert1.innerHTML='';
+
+ },4000)
+   {{/if}}
+ </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,567 @@
+/* this code for reset for page */
+body
+{
+margin:0;
+padding:0;
+ 
+width: 100%;
+}
+ html{
+    scroll-behavior: smooth;
+} 
+header
+{
+    position: sticky;
+    top:0px;
+    z-index:999;
+}
+/* this code for navbar  */
+#navbar
+{
+    display:flex;
+    background-color:rgba(12, 11, 11, 0.3);
+    text-align: center;
+    justify-content: center;
+   /*  position:sticky; */
+    top:0px;
+   width: 100%;  
+ 
+}
+
+ #toggle
+{
+    display: none;
+}
+
+label [for="toggle"]
+{
+    display: none;
+}
+ 
+#navbar ul
+{
+ display: flex;
+ margin-left: 250px;
+ margin-top: 25px;
+}
+#navbar ul li
+{
+list-style:none;
+ }
+ 
+ #navbar ul li a
+ {
+     text-decoration: none;
+     margin-left: 50px;
+     color:black;
+ }
+  
+ #navbar ul li a:hover
+ {
+     background-color:rgb(41, 39, 39);
+     border-radius: 5px;
+    color:white;
+     
+ }
+ /* for scrolling */
+
+ .scrolling-active
+ {
+     background-color:white;
+     
+
+ }
+  /* for end scrolling */
+
+
+/* this code for  end of navbar  */
+
+
+/* this code for home */
+ #home::before
+{
+    content: "";
+    position: absolute;
+    background-image: url('../img/background\ \(2\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     width:100%;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.6;
+
+} 
+ 
+#home
+{
+    display: flex;
+    flex-direction:column;
+     align-items: center;
+    height: 500px;
+    justify-content: center;
+    padding: 46px ;
+    line-height: 0.2;
+}
+
+/* this code for end of home */
+/*
+code for program section */
+#program
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+#program h1,p
+{
+color:black;
+}
+#program .cont1 img
+{
+width: 60px;
+}
+ .cont3
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont4
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.4;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.cont3 img
+{
+    width: 80px;
+    height: 80px;
+    margin-top: 63px;
+}
+.grid
+{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    width: 70%;
+}
+.cont1
+{
+    text-align: center;
+}
+
+
+/* code for end of program section */
+/* code for template */
+#template::after
+{
+     content: " ";
+     position:absolute;
+     background-image: url('../img/classes.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width:100%;
+     height: 400px;
+     z-index: -1;
+     opacity: 0.7;
+}
+#template p
+{
+color:white;
+line-height: 1.5;
+font-size: 2rem;
+}
+
+ #template .temp-cont
+ {
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     margin-top: 20px;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: 280px;
+
+ }
+/* code for end of template */
+/* code for class */
+#rootclass
+{
+    position:relative;
+    top:540px;
+    color:black;
+}
+.class1
+{
+    text-align: center;
+}
+.class1 img
+{
+width:60px;
+}
+ .part2 img
+ {
+     height: 400px;
+     width: 800px;
+ }
+ .box
+ {
+     height:100px;
+     width:400px;
+     display: flex;
+     justify-content: center;
+     background-color: white;
+      box-shadow: 10px 12px 10px rgb(243, 216, 216);
+}
+.part1 button
+{
+    height:70px;
+     width:400px;
+     background-color: rgb(242 30 30);
+     color: white;
+     font-size: 1.7rem;
+     padding: 15px 30px;
+     border: none;
+     cursor: pointer;
+}
+ .box h2
+ {
+font-size: 1.8rem;
+margin-top: 12px;
+ }
+
+ .box img
+ {
+height: 50px;
+width: 50px;
+margin-right: 10px;
+ }
+ .grid
+ {
+  display: grid;
+  position: relative;
+  top:80px;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:2rem;
+  justify-content: center;
+  align-items: center;
+  margin :auto;
+ }
+ .part1
+ {
+     display: grid;
+     grid-gap:2rem;
+ }
+.box h2
+{
+display: inline;
+}
+
+/* code for end of class */
+/* code for schedule class */
+
+ #sclass
+{
+    position:relative;
+    top:700px;
+    background-color: black;
+    z-index: -2;
+    height: 1100px;
+    opacity: 0.9;
+
+}
+#sclass::before
+{
+    content:" ";
+    background-image: url('../img/scott.jpg');
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 1100px;
+    width:100%;
+    position: absolute;
+
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+.classs1
+{
+    text-align: center;
+    position: relative;
+    top:30px;
+}
+.classs1 p{
+    color: white;
+}
+.classs1 img
+{
+    margin-bottom: 25px;
+}
+.table
+{
+    position:relative;
+    top:50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(5,110px);
+
+}
+.tcont
+{
+    border:2px solid white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding:35px 35px;
+}
+.heading
+{
+    text-align: center;
+    margin-bottom: 45px;
+    position:relative;
+    top:60px;
+}
+
+.common
+{
+    position: relative;
+    top:100px;
+}
+
+/* code for end of schedule class */
+/* <!-- code for expaert trainer  --> */
+
+#trainer
+{
+    position: relative;
+    top:800px;
+    z-index: 300;
+    height:500px;
+    width:100%;
+
+}
+#trainer   h2,p
+{
+color: black;
+}
+ .trainercont
+ {   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 480px;
+    box-shadow: 10px 12px 10px rgb(243, 216, 216);
+}
+.trainerlogo a
+{
+    margin-left:9px;
+   
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin
+  {
+    background: #55ACEE;
+    color: white;
+  }
+
+.trainercont img
+{
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.trainergrid
+{
+    display:grid;
+    grid-template-columns: repeat(3,480px);
+    grid-gap: 2rem;
+    position: relative;
+    top:150px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* code for end of expaat trainer */
+/* code for form and map */
+#information
+{
+    position: relative;
+    top:1100px;
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    grid-column-gap: 2rem;
+    justify-content: center;
+    
+}
+iframe
+{
+    width:600px;
+    height:600px;
+    
+     
+
+}
+.formback::before
+{
+    position: absolute;
+    content: " ";
+    background-image: url('../img/scott.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:600px;
+    width:700px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+ #form-col
+ {
+     background-color:white;
+     border-radius: 25px;
+     margin: auto;
+     margin-left: 30px;
+     position: relative;
+     top:70px;
+     width:600px;
+     height: 500px;
+ }
+ form
+ {
+     display: grid;
+     grid-gap:1rem;
+     margin-left: 100px;
+      
+     width:600px;
+     position: relative;
+     top: 60px;
+ }
+ /* end of form and map code */
+
+ 
+ /* code for footer */
+
+ #footer
+ {
+     background-color: white;
+     position: relative;
+     top:1100px;
+     height: 50px;
+ }
+ .footer1
+ {
+     color:black;
+     height: 50px;
+      
+     width: 600px;
+     margin:auto;
+     margin-top: 30px;
+ }
+ /* code for end of footer */
+/* utility class */
+.h1
+{
+    font-size: 6.2rem;
+    font-weight: bold;
+    font-family: "Passion One", cursive;
+    word-spacing: 4px;
+    letter-spacing: 7px;
+}
+ .h2
+{
+    font-size: 2.5rem;
+    line-height: 11px;
+    font-weight: bold;
+}
+ .color
+ {
+    color:rgb(242 30 30);
+ }
+ .btn1
+ {
+    background-color: rgb(242 30 30);
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+.p
+{
+    font-size: 1.2rem;
+    line-height: 5px;
+}
+.size-big
+{
+    height:40px;
+    width:400px;
+   
+}
+.size-small
+{
+    height:40px;
+    width:183px;
+     
+}
+#un
+{
+    margin-right: 20px;
+}
+#ta
+{
+    width:402px;
+}
+
+/* end of utility class */
+ 
+
+/* 
+this design for alerting message
+*/
+
+/* .alert
+{
+    width :100%;
+    background-color:rgb(150,221,227);
+    border:1px solid black;
+    height: 55px;
+
+} */
