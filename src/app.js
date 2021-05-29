@@ -1,8 +1,8 @@
 
 const express = require('express');
 const app = express();
-// const port = process.env.PORT || 5000;
-app.set( 'port', ( process.env.PORT || 5000 ));
+const port = process.env.PORT || 5000;
+
 const path = require('path');
 const hbs = require('hbs');
  const nodemailer=require('nodemailer');
@@ -180,6 +180,6 @@ app.get('/*',(req,res)=>{
 
 
 /* this is for end of email */
-app.listen(app.get( 'port' ), () => {
-    console.log(`connecte at server`+ app.get( 'port' ));
+app.listen(port, () => {
+    console.log(`connecte at server ${port}`);
 })
