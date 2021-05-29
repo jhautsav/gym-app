@@ -187,8 +187,10 @@
             <textarea name="text" id="ta" rows="10" cols="60" placeholder=" Message"  required  /></textarea> 
          </div>
          <div>
-            <input type="submit" value="SEND MESSAGE" class="btn" > 
+            <input type="submit" value="SEND MESSAGE" class="btn2" style="margin-right: 260px;"> 
+              <a href='https://wa.me/6350068824' target='_blank'> <i class="fa fa-whatsapp" style="font-size:30px;color:green; "></i></a>
          </div>
+       
      </form>
 
  </div>
@@ -212,7 +214,7 @@ const alert1=document.getElementById('alertbox');
  {{#if result}}
  alert1.innerHTML=` 
   <div class="alert alert-{{value1}} alert-dismissible fade show">
-    <strong>Success!</strong> Your message has been sent successfully {{scuess}}.
+    <strong> {{scuess}}</strong>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
  
   </div>

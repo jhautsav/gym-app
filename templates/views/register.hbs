@@ -213,11 +213,13 @@
         </div>
     </form>
     <script>
-        const alert1=document.getElementById('alert1');
+  
+
+const alert1=document.getElementById('alertbox');
  {{#if result}}
  alert1.innerHTML=` 
   <div class="alert alert-{{value1}} alert-dismissible fade show">
-    <strong>{{scuess}} </strong>.
+    <strong>{{scuess}}</strong> 
     <button type="button" class="close" data-dismiss="alert">&times;</button>
  
   </div>
@@ -228,7 +230,7 @@
 
  },4000)
    {{/if}}
-    </script>
+ </script>
     
 </body>
 

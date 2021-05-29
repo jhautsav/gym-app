@@ -452,6 +452,17 @@ iframe
     z-index: -1;
     opacity: 0.7;
 }
+.btn2
+{
+    background-color:grey;
+    border-radius: 10px;
+   
+}
+.btn2:hover
+{
+color:red;
+}
+ 
 
  #form-col
  {
@@ -494,6 +505,10 @@ iframe
      width: 600px;
      margin:auto;
      margin-top: 30px;
+ }
+ #footer a{
+     margin-right: 10px;
+
  }
  /* code for end of footer */
 /* utility class */

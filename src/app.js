@@ -79,18 +79,18 @@ app.post('/register', async (req, res) => {
             /*end of middleware code */
 
             const saveInsert = await insert.save();
-            res.status(201).render('signup',{scuess:'you are scuessfully register',result:true,value1:'success'});
+            res.status(201).render('signup',{scuess:'You have been successfully registered.',result:true,value1:'success'});
         }
 
         else 
         {
-            res.status(401).render('register',{scuess:'your password in not match',result:true,value1:'warning'});
+            res.status(401).render('register',{scuess:'Password confirmation and Password must match.',result:true,value1:'warning'});
         }
 
     }
     catch (e) 
     {
-        res.status(400).send(e);
+        res.status(401).render('register',{scuess:'Password confirmation and Password must match.',result:true,value1:'warning'});
     }
 })
 /* this is for end of  registration*/
@@ -105,16 +105,16 @@ app.post('/signup', async (req, res) => {
         const isMatch= await bcrypt.compare(passread,emailval.password);
         if (isMatch) 
         {
-            res.status(201).render('index',{fName:emailval.fName,scuess:'you are scuessfully login',result:true,value1:'success'});
+            res.status(201).render('index',{fName:emailval.fName,scuess:'You have been successfully logged in.',result:true,value1:'success'});
         }
         else
          {
-            res.status(401).render('signup',{scuess:'your data is not match',result:true,value1:'warning' })
+            res.status(401).render('signup',{scuess:'Incorrect user ID or password',result:true,value1:'warning' })
         }
 
     }
     catch (e) {
-        res.status(404).send('invalid email here');
+        res.status(401).render('signup',{scuess:'Incorrect user ID or password',result:true,value1:'warning' })
     }
 });
 /* this is for end of login credentials */
@@ -131,7 +131,7 @@ app.post('/email',async(req,res)=>{
          subject: subject,
          text:text
      })
-     const saveInsert = await saveData.save();
+    
     
       const transporter=nodemailer.createTransport({
           service:'gmail',
@@ -157,10 +157,10 @@ app.post('/email',async(req,res)=>{
               console.log(error);
           }
           else{
-            
            res.render('index',{scuess:'',result:true,value1:'success'});
-        }
+           }
       })
+      const saveInsert = await saveData.save();
     }
     catch(e)
     {
