@@ -105,7 +105,7 @@ app.post('/signup', async (req, res) => {
         const isMatch= await bcrypt.compare(passread,emailval.password);
         if (isMatch) 
         {
-            res.status(201).render('index',{fName:emailval.fName,scuess:'You have been successfully logged in.',result:true,value1:'success'});
+            res.status(201).render('index',{scuess:'You have been successfully logged in.',result:true,value1:'success'});
         }
         else
          {

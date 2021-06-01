@@ -3,8 +3,11 @@ const app=express();
 const port = process.env.PORT || 8000;
 const hbs=require('hbs');
 const path=require('path');
+//this is for uploading image
+const multer=require('multer');
 require('../../src/db/conn')
 const staticPath=path.join(__dirname,'../public');
+ 
 app.use(express.static(staticPath));
 const login=require('../../src/models/login');
 const emaildetails=require('../../src/models/email');
@@ -43,6 +46,30 @@ const storeData=login.find({});
          }) 
     
     })
+    app.get('/dataupload',(req,res)=>{
+        res.render('dataupload');
+    })
+  //this is for uploading image
+ 
+ const storage=multer.diskStorage({
+     destination:"../public/uploads/",
+     filename:(req,file,cb)=>{
+         cb(null,file.fieldname+"_"+Date.now()+path.extname(file.originalname));
+     }
+ });
+
+
+ var upload=multer({
+    storage:storage
+}).single('file');
+
+ app.post('/imgupload',upload,(req,res,next)=>
+    {
+        var s=req.file.filename;
+console.log(s)
+         res.send( `${s} and scuessfully`);
+    })
+  
 
     //this is for delting
      app.get('/delete/:id',async(req,res)=>{
@@ -191,7 +218,8 @@ const storeData=login.find({});
        app.get('/*',(req,res)=>{
            res.render('404');
        })
-
+  
+       
 
      
      
