@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signUp page</title>
+    <title>INDIAN BEST GYM|THE GREAT GYM</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,25 +14,26 @@
         body {
             margin: 0;
             padding: 0;
-                content: "";
-    position: absolute;
-    background-image: url('../img/background\ \(2\).jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-     
-     width:100%;
-    z-index: -1;
+            content: "";
+            position: absolute;
+            background-image: url('../img/background\ \(2\).jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 100%;
+            z-index: -1;
         }
-        span
-        {
-            color:red;
+
+        span {
+            color: red;
         }
+
         #login .container #login-row #login-column #login-box {
             margin-top: 120px;
             max-width: 600px;
             height: 320px;
             border: 1px solid #9C9C9C;
-            background-color:rgb(56, 31, 31);
+            background-color: rgb(56, 31, 31);
             border-radius: 25px;
             box-shadow: 8px 8px 8px 5px grey;
         }
@@ -51,9 +52,9 @@
 <body>
     {{>alertmessage}}
     <div id="login">
-        <h3 class="text-center text-white pt-5">WELCOME TO TRAINING  <span> STUDIO</span>
-</h3>
-         
+        <h3 class="text-center text-white pt-5">WELCOME TO TRAINING <span> STUDIO</span>
+        </h3>
+
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
@@ -81,26 +82,25 @@
             </div>
         </div>
     </div>
-    
-   <script>
-  
 
-const alert1=document.getElementById('alertbox');
- {{#if result}}
- alert1.innerHTML=` 
+    <script>
+
+
+        const alert1 = document.getElementById('alertbox');
+        { {#if result } }
+        alert1.innerHTML = ` 
   <div class="alert alert-{{value1}} alert-dismissible fade show">
     <strong>{{scuess}}</strong> 
     <button type="button" class="close" data-dismiss="alert">&times;</button>
  
   </div>
  `
- setTimeout(function()
- {
-     alert1.innerHTML='';
+        setTimeout(function () {
+            alert1.innerHTML = '';
 
- },4000)
-   {{/if}}
- </script>
+        }, 4000)
+        { { /if}}
+    </script>
 </body>
 
 </html>

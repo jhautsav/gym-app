@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>become a member</title>
+    <title>INDIAN BEST GYM|THE GREAT GYM</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-       
         .register {
-            background: -webkit-linear-gradient(left,  #303032, #33393a);
+            background: -webkit-linear-gradient(left, #303032, #33393a);
             margin-top: 3%;
             padding: 3%;
         }
@@ -87,7 +86,7 @@
             border: none;
             border-radius: 1.5rem;
             padding: 2%;
-            background:  #33393a;
+            background: #33393a;
             color: #fff;
             font-weight: 600;
             width: 50%;
@@ -130,31 +129,32 @@
             margin-bottom: -15%;
             color: #495057;
         }
-          body {
+
+        body {
             margin: 0;
             padding: 0;
-                content: "";
-    position: absolute;
-    background-image: url('../img/background\ \(2\).jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-     
-     width:100%;
-    z-index: -1;
+            content: "";
+            position: absolute;
+            background-image: url('../img/background\ \(2\).jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+
+            width: 100%;
+            z-index: -1;
         }
-          span
-        {
-            color:red;
+
+        span {
+            color: red;
         }
     </style>
 </head>
 
 <body>
-     {{alertmessage}}
-         <h3 class="text-center text-white pt-5">WELCOME TO TRAINING  <span> STUDIO</span>
-</h3>
+    {{alertmessage}}
+    <h3 class="text-center text-white pt-5">WELCOME TO TRAINING <span> STUDIO</span>
+    </h3>
     <form action="/register" method="POST">
-    
+
 
         <div class="container register">
             <div class="row">
@@ -165,7 +165,7 @@
                     <p>Welcome to training <span>studio</span> </p>
 
                 </div>
-                
+
                 <div class="col-md-9 register-right">
 
                     <div class="tab-content" id="myTabContent">
@@ -213,25 +213,24 @@
         </div>
     </form>
     <script>
-  
 
-const alert1=document.getElementById('alertbox');
- {{#if result}}
- alert1.innerHTML=` 
+
+        const alert1 = document.getElementById('alertbox');
+        { {#if result } }
+        alert1.innerHTML = ` 
   <div class="alert alert-{{value1}} alert-dismissible fade show">
     <strong>{{scuess}}</strong> 
     <button type="button" class="close" data-dismiss="alert">&times;</button>
  
   </div>
  `
- setTimeout(function()
- {
-     alert1.innerHTML='';
+        setTimeout(function () {
+            alert1.innerHTML = '';
 
- },4000)
-   {{/if}}
- </script>
-    
+        }, 4000)
+        { { /if}}
+    </script>
+
 </body>
 
 </html>
