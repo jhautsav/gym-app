@@ -1,7 +1,6 @@
 const mongoose=require('mongoose');
 mongoose.connect('mongodb+srv://admin:Utsav@1998@cluster0.rfnpr.mongodb.net/gymdata',{
-    
-    useNewUrlParser: true ,
+   useNewUrlParser: true ,
     useUnifiedTopology: true,
     useCreateIndex:true,
     useFindAndModify:false
