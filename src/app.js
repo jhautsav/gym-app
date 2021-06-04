@@ -362,5 +362,5 @@ app.get('/*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`connecte at server ${port}`);
+    console.log(`connect at server ${port}`);
 }) 
