@@ -361,6 +361,11 @@ app.get('/*', (req, res) => {
     res.render('404');
 })
 
+if (port == null || port == "")
+{
+    port =3000;
+}
+
 app.listen(port, () => {
     console.log(`connect at server ${port}`);
 }) 
